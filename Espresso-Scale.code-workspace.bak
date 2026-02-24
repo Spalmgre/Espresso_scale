@@ -1,0 +1,87 @@
+{
+  "folders": [
+    {
+      "path": ".",
+      "name": "Klack-Treeni"
+    }
+  ],
+  "settings": {
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "typescript.enablePromptUseWorkspaceTsdk": true,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    },
+    "files.exclude": {
+      "**/.git": true,
+      "**/.DS_Store": true,
+      "**/node_modules": true,
+      "**/.expo": true,
+      "**/dist": true,
+      "**/web-build": true
+    },
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/package-lock.json": true,
+      "**/.expo": true,
+      "**/dist": true,
+      "**/web-build": true
+    },
+    "files.associations": {
+      "*.tsx": "typescriptreact",
+      "*.ts": "typescript"
+    },
+    "emmet.includeLanguages": {
+      "typescript": "typescriptreact",
+      "typescriptreact": "typescriptreact"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "git.ignoreLimitWarning": true
+  },
+  "extensions": {
+    "recommendations": [
+      "dbaeumer.vscode-eslint",
+      "esbenp.prettier-vscode",
+      "expo.vscode-expo-tools",
+      "ms-vscode.vscode-typescript-next",
+      "bradlc.vscode-tailwindcss",
+      "christian-kohler.npm-intellisense",
+      "christian-kohler.path-intellisense"
+    ]
+  },
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Expo Start",
+        "type": "node",
+        "request": "launch",
+        "program": "${workspaceFolder}/node_modules/expo/bin/cli.js",
+        "args": ["start"],
+        "console": "integratedTerminal",
+        "internalConsoleOptions": "neverOpen"
+      },
+      {
+        "name": "Expo Web",
+        "type": "node",
+        "request": "launch",
+        "program": "${workspaceFolder}/node_modules/expo/bin/cli.js",
+        "args": ["start", "--web"],
+        "console": "integratedTerminal",
+        "internalConsoleOptions": "neverOpen"
+      }
+    ]
+  }
+}
