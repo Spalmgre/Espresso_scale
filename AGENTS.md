@@ -15,3 +15,7 @@ Päivitetään aina samassa commitissa merkittävän muutoksen kanssa:
 - **docs/dumps/ARCHITECTURE_DUMP.md** + **UI_UX_DUMP.md** päivitetään jokaisen versionnoston yhteydessä
 
 Nimeämisstandardi: dump-kansio `docs/dumps/` (monikko), agenttiohje `AGENTS.md` (isoilla).
+
+## Vuoron päättäminen (Pakollinen loppuraportti)
+
+- **Pakollinen loppuraportti (knowledgebase-standardi):** Jokaisen valmistuvan vaiheen/tehtävän päätteeksi kirjoita yksi kopioitava loppuraportti tekstikoodilohkona (text-kielimerkintä) markerien `=== KOPIOI TÄSTÄ ALKAEN ===` ja `=== KOPIOI TÄHÄN ASTI ===` väliin. Sisältö: `### LOPPURAPORTTI – <tehtävän nimi>` (tai `### TILANNERAPORTTI – ODOTTAA OHJEITA`), commit-hash, testitulokset taulukkona, yhteenveto tehdyistä muutoksista ja seuraavat askeleet. Ohitetaan vain käyttäjän nimenomaisesta pyynnöstä (esim. "vastaa lyhyesti"). Esimerkkimuoto: `dev-knowledgebase/04-issues-resolved/loppuraportti-koodilohko-2026-11-08.md`.
